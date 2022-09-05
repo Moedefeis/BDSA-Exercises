@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using ConsoleApp;
+
+var input = Console.ReadLine();
+int year = int.Parse(input);
+var leapYear = new LeapYear();
+var isLeapYear = leapYear.IsLeapYear(year);
+
+if (isLeapYear) 
+{
+    Console.WriteLine("yay");
+}
+else Console.WriteLine("nay");
